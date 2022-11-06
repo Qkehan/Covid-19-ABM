@@ -32208,7 +32208,7 @@ var communities=[];
 // plot dimensions
 var margin = {top: 20, right: 50, bottom: 50, left: 50}
 margin.width = 500 - margin.left - margin.right;
-margin.height = 400 - margin.top - margin.bottom;
+margin.height = 500 - margin.top - margin.bottom;
 
 // simulation time controllers and key time information
 var timeControllers = [];
@@ -32723,7 +32723,7 @@ function plotCounts(countsArray){
 function initCanvas(){
     // frame of the canvas
     var w = 500 - margin.left - margin.right,
-        h = 350 - margin.top - margin.bottom;
+        h = 500 - margin.top - margin.bottom;
     var communityWidth = 100, communityHeight = 100;
 
     var svg = d3.select("body");
@@ -32894,7 +32894,7 @@ function onPlay(){
         for (var i in timeControllers){
             timeControllers[i].stop(); // stop social distancing when click pause
         }
-        document.querySelector('#playButton').value = 'Resume';
+        document.querySelector('#playButton').value = '继续';
     }
     else if (startStopFlag == 1) { // currently paused, need to start running
         startStopFlag = 0;
@@ -32918,7 +32918,7 @@ function onPlay(){
             console.log("Restart social distancing!!!");
             timeControllers[2].restart();
         }
-        document.querySelector('#playButton').value = 'Pause';
+        document.querySelector('#playButton').value = '暂停';   //Pause
     }
 }
 
@@ -32969,7 +32969,7 @@ function onReset(){
         }
     }
 
-    document.querySelector('#playButton').value = 'Pause';
+    document.querySelector('#playButton').value = '暂停';   //Pause
 }
 
 
@@ -33154,7 +33154,7 @@ function initAgentObj(){
 }
 
 // Start running the program!
-$('.Chinese').hide();
+$('.English').hide();
 $('#lang_ch').on('click', function() {
     console.log('change language to chinese');
     $('.English').hide();

@@ -1,5 +1,5 @@
 
-Click [here](https://thefriedbee.github.io/Covid-19-ABM/) to play the simulation game
+Click [here](https://github.com/Qkehan/Covid-19-ABM/) to play the simulation game
 
 <img src="image/covid_abm_screenshot_en.png"
      alt="Running Covid-abm simulation"
